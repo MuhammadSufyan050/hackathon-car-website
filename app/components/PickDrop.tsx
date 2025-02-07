@@ -2,8 +2,8 @@ import { LuArrowDownUp } from 'react-icons/lu';
 
 const PickDrop = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-6 p-6">
-      {/* Pick-Up Card */}
+    <div className="relative flex flex-col md:flex-row justify-center items-center gap-6 p-6">
+    
       <div className="flex flex-col w-full max-w-md md:max-w-[582px] bg-white rounded-lg p-4 shadow-md">
         <div className="flex items-center gap-2 mb-4">
           <input type="radio" name="location" id="pickup" defaultChecked />
@@ -48,12 +48,10 @@ const PickDrop = () => {
         </div>
       </div>
 
-      {/* Swap Icon */}
-      <div className="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-blue-500 text-white rounded-md shadow-md">
-        <LuArrowDownUp size={24} />
-      </div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 lg:w-12 lg:h-12 bg-blue-500 text-white rounded-lg shadow-blue-200 shadow-lg hover:shadow-xl transition-shadow flex items-center justify-center z-10">
+  <LuArrowDownUp className="text-xl md:text-2xl lg:text-3xl" />
+</div>
 
-      {/* Drop-Off Card */}
       <div className="flex flex-col w-full max-w-md md:max-w-[582px] bg-white rounded-lg p-4 shadow-md">
         <div className="flex items-center gap-2 mb-4">
           <input type="radio" name="location" id="dropoff" />

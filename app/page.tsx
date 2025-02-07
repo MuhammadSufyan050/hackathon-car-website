@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "./components/Hero";
 import PickDrop from "./components/PickDrop";
 import CarCardCarousel from "./components/Popular";
